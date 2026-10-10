@@ -1,3 +1,6 @@
+> **後継 / Successor**: このリポジトリは [aon-co-jp/pdf-r2l-rs](https://github.com/aon-co-jp/pdf-r2l-rs) に**統合**されました(Windows / macOS / Linux / Android、綴じ方向=右/左/元と同じ、OCRの書体文字化、画像の高解像度化)。今後の開発・配布は pdf-r2l-rs で行います。
+> This repository has been **merged into** [aon-co-jp/pdf-r2l-rs](https://github.com/aon-co-jp/pdf-r2l-rs) (Windows / macOS / Linux / Android; right/left/keep binding; OCR re-typesetting; image upscaling). Development and releases continue there.
+
 # pdf-r2l-script-android
 
 PDFを右綴じ(R2L)かつ見開き(右始まり)にする、Android 用アプリ(APK)です。
