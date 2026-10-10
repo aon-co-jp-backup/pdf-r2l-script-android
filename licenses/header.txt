@@ -1,0 +1,53 @@
+PDF R2L Script Android - License notices / ライセンス表示
+==============================================================================
+
+[English]
+
+PDF R2L Script Android is an Android GUI application with an APK that makes
+PDF files right-to-left (R2L) with a two-column-right (spread) page layout.
+
+It is a Rust reimplementation of "pdf-r2l-script" by INORIA
+(https://github.com/INORIA/pdf-r2l-script), itself forked from "pdfr2l" by
+hanepjiv (https://bitbucket.org/hanepjiv/pdfr2l). Both are licensed under the
+MIT License, and so is this program. The source code is available at
+https://github.com/aon-co-jp/pdf-r2l-script-android .
+
+Copyright (c) 2014 hanepjiv <hanepjiv@gmail.com>
+Copyright (c) 2026 aon-co-jp (Android GUI reimplementation)
+
+Third-party libraries used by this program are listed after the MIT License
+text below, together with their licenses. Only the English text of each
+license is legally binding; the Japanese text is a courtesy explanation, not
+an official translation.
+
+[日本語]
+
+PDF R2L Script Android は、PDFファイルを右綴じ(R2L)かつ見開き(右始まり)にする、
+インストーラー付きの Android 用 GUI アプリケーションです。
+
+本プログラムは INORIA 氏の「pdf-r2l-script」(https://github.com/INORIA/pdf-r2l-script)、
+およびその元となった hanepjiv 氏の「pdfr2l」(https://bitbucket.org/hanepjiv/pdfr2l)
+を Rust で作り直したものです。いずれも MIT ライセンスであり、本プログラムも
+MIT ライセンスで提供されます。ソースコードは
+https://github.com/aon-co-jp/pdf-r2l-script-android で入手できます。
+
+Copyright (c) 2014 hanepjiv <hanepjiv@gmail.com>
+Copyright (c) 2026 aon-co-jp (Android GUI 版の再実装)
+
+本プログラムが使用する第三者ライブラリとそのライセンスは、下記 MIT ライセンス
+本文の後に列挙しています。各ライセンスで法的拘束力を持つのは英語の原文のみで、
+日本語部分は便宜的な説明であり、公式な翻訳ではありません。
+
+==============================================================================
+The MIT License (MIT) - full text / 原文全文
+==============================================================================
+
+
+(日本語の参考訳・非公式) 本ソフトウェアおよび関連文書(以下「ソフトウェア」)の
+複製を取得した人は、無償で、使用・複製・改変・結合・公開・頒布・サブライセンス・
+販売の権利を含め、制限なくソフトウェアを扱うことができます。ただし、上記の
+著作権表示と本許諾表示を、ソフトウェアの全ての複製または重要な部分に含めることを
+条件とします。ソフトウェアは「現状のまま」で、明示・黙示を問わず一切の保証なしに
+提供されます。作者または著作権者は、契約・不法行為その他を問わず、ソフトウェアまたは
+その使用・取引に起因する一切の請求・損害・その他の責任を負いません。
+

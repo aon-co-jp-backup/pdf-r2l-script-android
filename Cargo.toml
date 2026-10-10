@@ -1,0 +1,19 @@
+[package]
+name = "pdf-r2l-script-android"
+version = "1.0.0"
+edition = "2021"
+license = "MIT"
+description = "PDF R2L Script Android (Rust core via JNI)"
+
+[lib]
+name = "pdfr2l_jni"
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+lopdf = "0.34"
+jni = "0.21"
+
+[profile.release]
+opt-level = "s"
+lto = true
+strip = true

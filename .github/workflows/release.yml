@@ -1,0 +1,44 @@
+name: release
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  build:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Rust toolchain and cargo-ndk
+        run: |
+          rustup target add aarch64-linux-android armv7-linux-androideabi x86_64-linux-android
+          cargo install cargo-ndk --locked
+      - name: Rust tests
+        run: cargo test --release
+      - name: Build signed APK
+        env:
+          KS_B64: ${{ secrets.PDFR2L_KEYSTORE_B64 }}
+          PDFR2L_KEYSTORE_PASSWORD: ${{ secrets.PDFR2L_KEYSTORE_PASSWORD }}
+          PDFR2L_KEY_ALIAS: pdfr2l
+        run: |
+          ANDROID_NDK_HOME=$(ls -d "$ANDROID_HOME"/ndk/* | sort -V | tail -1)
+          export ANDROID_NDK_HOME
+          echo "$KS_B64" | base64 -d > "$RUNNER_TEMP/release.jks"
+          export PDFR2L_KEYSTORE_FILE="$RUNNER_TEMP/release.jks"
+          chmod +x gradlew
+          ./gradlew --no-daemon assembleRelease
+          cp app/build/outputs/apk/release/app-release.apk pdf-r2l-script-android.apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: apk
+          path: pdf-r2l-script-android.apk
+      - name: Release
+        if: startsWith(github.ref, 'refs/tags/')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "${GITHUB_REF_NAME}" pdf-r2l-script-android.apk --title "pdf-r2l-script-android ${GITHUB_REF_NAME}" --notes "Android用APK(署名済み)。ライセンスは英日併記(アプリ内/LICENSES.txt) / Signed Android APK. Licenses in English and Japanese."
