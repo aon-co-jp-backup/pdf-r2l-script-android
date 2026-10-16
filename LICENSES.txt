@@ -13,7 +13,7 @@ MIT License, and so is this program. The source code is available at
 https://github.com/aon-co-jp/pdf-r2l-script-android .
 
 Copyright (c) 2014 hanepjiv <hanepjiv@gmail.com>
-Copyright (c) 2026 aon-co-jp (Android GUI reimplementation)
+Copyright (c) 2026 石塚正浩（MASAHIRO ISHIZUKA） (Android GUI reimplementation)
 
 Third-party libraries used by this program are listed after the MIT License
 text below, together with their licenses. Only the English text of each
@@ -32,7 +32,7 @@ MIT ライセンスで提供されます。ソースコードは
 https://github.com/aon-co-jp/pdf-r2l-script-android で入手できます。
 
 Copyright (c) 2014 hanepjiv <hanepjiv@gmail.com>
-Copyright (c) 2026 aon-co-jp (Android GUI 版の再実装)
+Copyright (c) 2026 石塚正浩（MASAHIRO ISHIZUKA） (Android GUI 版の再実装)
 
 本プログラムが使用する第三者ライブラリとそのライセンスは、下記 MIT ライセンス
 本文の後に列挙しています。各ライセンスで法的拘束力を持つのは英語の原文のみで、
@@ -52,7 +52,7 @@ The MIT License (MIT) - full text / 原文全文
 その使用・取引に起因する一切の請求・損害・その他の責任を負いません。
 
 Copyright (c) 2014 hanepjiv <hanepjiv@gmail.com>
-Copyright (c) 2026 aon-co-jp
+Copyright (c) 2026 石塚正浩（MASAHIRO ISHIZUKA）
 
 The MIT License (MIT)
 
