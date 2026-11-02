@@ -10,7 +10,7 @@ name = "pdfr2l_jni"
 crate-type = ["cdylib", "rlib"]
 
 [dependencies]
-lopdf = "0.34"
+lopdf = "0.42"
 jni = "0.21"
 
 [profile.release]
