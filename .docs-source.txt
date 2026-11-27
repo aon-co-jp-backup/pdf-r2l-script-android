@@ -1,3 +1,3 @@
 source: aon-co-jp/pdf-r2l-script-android
-commit: fb819c73a27c40be7c30bcce4ba42f52cb112b8a
-updated: 2026-11-25T05:51:39Z
+commit: 080b76c27c212a0dd227b04ba9f654b3dbc52979
+updated: 2026-11-27T05:30:59Z
